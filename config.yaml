@@ -1,234 +1,192 @@
-# ===================================================================
-# 医学論文自動収集・要約システム 設定ファイル
-# ===================================================================
-
-# --- 検索設定 ---
 search:
-  # 検索対象期間（過去何日分）
   days_back: 7
-  # 最大取得論文数（フィルタリング前）
   max_results: 200
-  # 最終選出論文数
   top_n: 10
-  # Top論文の詳細要約数
   detailed_top_n: 10
-
-# --- 専門領域名（表示・プロンプトに使用） ---
-# Setupワークフローで自動設定されます
-specialty_name: "循環器内科"
-
-# --- 専門領域 ---
-specialties:
-  # 最優先領域
-  primary:
-    - heart failure
-    - ischemic heart disease
-    - myocardial infarction
-    - coronary artery disease
-    - atrial fibrillation
-  # 次点で重要な領域
-  secondary:
-    - hypertension
-    - diabetes mellitus
-    - dyslipidemia
-    - echocardiography
-    - coronary artery disease prevention
-    - cardiomyopathy
-    - cardiac emergency
-    - valvular heart disease
-    - ventricular tachycardia
-    - ventricular fibrillation
-
-# --- 優先ジャーナル ---
-journals:
-  # Tier 1 - 総合医学誌（最高優先度）
-  tier1:
-    - "N Engl J Med"
-    - "JAMA"
-    - "Lancet"
-    - "BMJ"
-    - "Ann Intern Med"
-  # Tier 2 - 循環器専門誌
-  tier2:
-    - "Circulation"
-    - "J Am Coll Cardiol"
-    - "Eur Heart J"
-  # Tier 3 - その他重要誌
-  tier3:
-    - "JAMA Cardiol"
-    - "JAMA Intern Med"
-    - "Circ Res"
-    - "Heart"
-    - "JACC Heart Fail"
-    - "Eur J Heart Fail"
-    - "Heart Rhythm"
-    - "Europace"
-
-# --- 論文タイプスコア ---
 study_type_scores:
-  "Randomized Controlled Trial": 10
-  "Meta-Analysis": 9
-  "Systematic Review": 9
-  "Clinical Trial": 8
-  "Multicenter Study": 7
-  "Observational Study": 6
-  "Cohort Study": 6
-  "Practice Guideline": 10
-  "Guideline": 10
-  "Review": 4
-  "Case Reports": 1
-  "Editorial": 2
-  "Comment": 1
-  "Letter": 1
-
-# --- 除外する論文タイプ ---
+  Randomized Controlled Trial: 10
+  Meta-Analysis: 9
+  Systematic Review: 9
+  Clinical Trial: 8
+  Multicenter Study: 7
+  Observational Study: 6
+  Cohort Study: 6
+  Practice Guideline: 10
+  Guideline: 10
+  Review: 4
+  Case Reports: 1
+  Editorial: 2
+  Comment: 1
+  Letter: 1
 exclude_types:
-  - "Case Reports"
-  - "Editorial"
-  - "Comment"
-  - "Letter"
-  - "Published Erratum"
-
-# --- AI要約設定 ---
-ai:
-  # Gemini モデル フォールバックチェーン（順に試行）
-  model_chain:
-    - "gemini-2.5-flash"
-    - "gemini-2.5-flash-lite-preview-09-2025"
-    - "gemini-2.0-flash"
-  # API呼び出しタイムアウト（秒）
-  timeout: 120
-  # リトライ回数
-  max_retries: 3
-  # リトライ間隔（秒）
-  retry_delay: 5
-
-# --- 出力設定 ---
-output:
-  # 出力ディレクトリ
-  directory: "output"
-  # ファイル名フォーマット（日付は自動挿入）
-  filename_format: "週刊医学論文レビュー_{date}.docx"
-
-# --- 履歴管理 ---
-history:
-  # 履歴ファイルパス
-  file: "history.json"
-  # 履歴保持期間（日）
-  retention_days: 180
-
-# --- 臨床関連性スコア設定 ---
+- Case Reports
+- Editorial
+- Comment
+- Letter
+- Published Erratum
 clinical_relevance:
-  # 高臨床的価値キーワード（+5点、いずれか1つ含めばOK）
   high_value:
-    - "randomized controlled trial"
-    - "clinical practice guideline"
-    - "treatment outcome"
-    - "all-cause mortality"
-    - "cardiovascular outcome"
-    - "cardiovascular death"
-    - "major adverse cardiovascular events"
-    - "mace"
-    - "heart failure hospitalization"
-    - "primary endpoint"
-  # 実臨床への応用性キーワード（+3点）
+  - hospital readmission
+  - mortality rate
+  - quality of life
+  - patient satisfaction
+  - functional status
+  - caregiver burden
+  - adverse events
+  - symptom control
+  - disease progression
+  - length of stay
   practical:
-    - "real-world"
-    - "routine clinical"
-    - "pragmatic"
-    - "clinical decision"
-    - "patient management"
-    - "standard of care"
-    - "clinical practice"
-    - "clinical outcome"
-  # 日本・アジア人データ（+2点）
+  - clinical decision support
+  - treatment pathways
+  - implementation science
+  - guideline adherence
+  - patient engagement
+  - care coordination
+  - shared decision-making
+  - resource allocation
   japan_relevant:
-    - "japanese"
-    - "asian"
-    - "japan"
-    - "east asian"
-
-# --- 基礎研究除外フレーズ ---
-# タイトル・アブストラクトにこれらが含まれ、かつ臨床ワードがない場合は除外
+  - japanese
+  - asian
+  - japan
+  - east asian
 basic_science_exclude:
-  - "in vitro"
-  - "mouse model"
-  - "rat model"
-  - "cell line"
-  - "ex vivo"
-  - "murine"
-  - "knockout mice"
-  - "animal model"
-  - "zebrafish"
-
-# --- 曜日別テーマ設定 ---
+- in vitro
+- mouse model
+- rat model
+- cell line
+- ex vivo
+- murine
+- knockout mice
+- animal model
+- zebrafish
+ai:
+  model_chain:
+  - gemini-2.5-flash
+  - gemini-2.5-flash-lite-preview-09-2025
+  - gemini-2.0-flash
+  timeout: 120
+  max_retries: 3
+  retry_delay: 5
+output:
+  directory: output
+  filename_format: 医学論文レビュー_{date}.docx
+history:
+  file: history.json
+  retention_days: 180
+specialty_name: 在宅医療 / 在宅入院 / プライマリケア / 緩和ケア /認知症 / 医療経済 / 医療AI / 災害医療
+specialties:
+  primary:
+  - home healthcare
+  - palliative care
+  - dementia
+  - primary care
+  - hospital at home
+  - health economics
+  - medical artificial intelligence
+  secondary:
+  - end-of-life care
+  - cognitive impairment
+  - cost-effectiveness analysis
+  - machine learning in medicine
+  - disaster medicine
+  - community health services
+  - virtual ward
+  - caregiver burden
+  - telemedicine
+  - shared decision-making
+  - long-term care
+  - aging in place
+journals:
+  tier1:
+  - n engl j med
+  - lancet
+  - jama
+  - bmj
+  - ann intern med
+  tier2:
+  - j am geriatr soc
+  - palliative med
+  - j gen intern med
+  - health econ
+  - j med internet res
+  tier3:
+  - bmc health serv res
+  - j pain symptom manage
+  - alzheimers dement
+  - disaster med public health prep
+  - fam pract
+  - j telemed telecare
+  - int j med inform
+  - age ageing
 daily_themes:
-  # 月曜日
   Monday:
     specialties:
-      - "heart failure"
+    - home healthcare services
+    - hospital at home programs
+    - virtual wards
+    - home-based care models
+    - domiciliary care
     journals:
-      - "JACC Heart Fail"
-      - "Eur J Heart Fail"
-      - "Circ Heart Fail"
-  # 火曜日
+    - j am geriatr soc
+    - bmc health serv res
   Tuesday:
     specialties:
-      - "hypertension"
+    - primary care delivery
+    - community health services
+    - general practice
+    - family medicine
+    - integrated care
     journals:
-      - "Hypertension"
-      - "Am J Hypertens"
-      - "J Hum Hypertens"
-  # 水曜日
+    - fam pract
+    - j gen intern med
   Wednesday:
     specialties:
-      - "dyslipidemia"
-      - "lipid"
-      - "cholesterol"
-      - "statin"
-      - "hyperlipidemia"
+    - palliative care interventions
+    - end-of-life care planning
+    - hospice care
+    - symptom management
+    - advance care planning
     journals:
-      - "J Clin Lipidol"
-      - "Atherosclerosis"
-      - "Arterioscler Thromb Vasc Biol"
-  # 木曜日
+    - palliative med
+    - j pain symptom manage
   Thursday:
     specialties:
-      - "diabetes mellitus"
+    - dementia care
+    - alzheimer's disease management
+    - cognitive impairment assessment
+    - caregiver support
+    - geriatric syndromes
     journals:
-      - "Diabetes Care"
-      - "Diabetologia"
-      - "Diabetes"
-  # 金曜日
+    - alzheimers dement
+    - j am geriatr soc
   Friday:
     specialties:
-      - "ischemic heart disease"
-      - "myocardial infarction"
-      - "coronary artery disease"
+    - health economics evaluation
+    - cost-effectiveness analysis
+    - healthcare resource utilization
+    - economic burden of disease
+    - health policy
     journals:
-      - "EuroIntervention"
-      - "JACC Cardiovasc Interv"
-      - "Circ Cardiovasc Interv"
-  # 土曜日
+    - health econ
+    - bmc health serv res
   Saturday:
     specialties:
-      - "cardiovascular prevention"
-      - "primary prevention"
-      - "secondary prevention"
-      - "cardiovascular risk"
-      - "lifestyle intervention"
+    - medical artificial intelligence applications
+    - machine learning in healthcare
+    - deep learning for diagnosis
+    - telemedicine platforms
+    - digital health interventions
     journals:
-      - "Eur J Prev Cardiol"
-      - "J Am Heart Assoc"
-      - "Prev Med"
-  # 日曜日
+    - j med internet res
+    - int j med inform
   Sunday:
     specialties:
-      - "arrhythmia"
-      - "atrial fibrillation"
-      - "ventricular tachycardia"
-      - "ventricular fibrillation"
+    - disaster medicine preparedness
+    - emergency response planning
+    - mass casualty management
+    - humanitarian aid
+    - public health emergencies
     journals:
-      - "Heart Rhythm"
-      - "Europace"
-      - "Circ Arrhythm Electrophysiol"
+    - disaster med public health prep
+    - lancet glob health
