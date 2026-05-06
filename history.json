@@ -1,3 +1,24 @@
 {
-  "reported_pmids": {}
+  "reported_pmids": {
+    "41672360": {
+      "title": "Early Supportive Versus Standard Care in Phase I Cancer Trials: A Randomized Controlled Trial.",
+      "reported_at": "2026-05-06T12:35:54.838160"
+    },
+    "41770197": {
+      "title": "Outpatient Curricular Content for Hospice and Palliative Medicine Trainees: A National Survey.",
+      "reported_at": "2026-05-06T12:35:54.838160"
+    },
+    "42069237": {
+      "title": "Optimizing Approaches in Advance Care Planning in Dementia as Perceived by General Practitioners.",
+      "reported_at": "2026-05-06T12:35:54.838160"
+    },
+    "41564908": {
+      "title": "Intrinsic Religious Motivations Influencing Advance Care Planning in Japan: A Mixed-Methods Study.",
+      "reported_at": "2026-05-06T12:35:54.838160"
+    },
+    "42057103": {
+      "title": "Barriers and facilitators to advance care planning implementation for patients with neurodegenerative diseases among Indian physicians: a mixed-methods analysis.",
+      "reported_at": "2026-05-06T12:35:54.838160"
+    }
+  }
 }
