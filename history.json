@@ -1,13 +1,5 @@
 {
   "reported_pmids": {
-    "42059332": {
-      "title": "Multi-State Implementation of the Alzheimer's Association Dementia Care Coordination (DCC) Program.",
-      "reported_at": "2026-05-07T23:02:59.964707"
-    },
-    "42067745": {
-      "title": "Associations of Individual- and Neighborhood-Level Factors with Racial and Ethnic Disparities in Timely Dementia Diagnosis.",
-      "reported_at": "2026-05-07T23:02:59.964707"
-    },
     "42082998": {
       "title": "Organizational impacts of fixed-duration therapies for the management of patients with chronic lymphocytic leukemia in Italy.",
       "reported_at": "2026-05-08T22:59:16.563184"
@@ -1019,6 +1011,18 @@
     "42580497": {
       "title": "Implementing an Integrated Palliative Care Pathway in Long-term Care Facilities.",
       "reported_at": "2026-11-03T03:20:31.970734"
+    },
+    "42951088": {
+      "title": "Models of palliative care for malignant disease in rural settings: Systematic review.",
+      "reported_at": "2026-11-04T01:58:21.264283"
+    },
+    "42971489": {
+      "title": "Perceptions of living with drug-resistant epilepsy and the potential role of neuropalliative care.",
+      "reported_at": "2026-11-04T01:58:21.264283"
+    },
+    "41912943": {
+      "title": "Language Preference Is Associated with Goals-of-Care Communication and End-of-Life Care in Dementia.",
+      "reported_at": "2026-11-04T01:58:21.264283"
     }
   }
 }
