@@ -1,25 +1,5 @@
 {
   "reported_pmids": {
-    "42082998": {
-      "title": "Organizational impacts of fixed-duration therapies for the management of patients with chronic lymphocytic leukemia in Italy.",
-      "reported_at": "2026-05-08T22:59:16.563184"
-    },
-    "42089733": {
-      "title": "Dedicated day surgery supported by remote patient monitoring for appendicectomy and cholecystectomy procedures: A cost-effectiveness analysis.",
-      "reported_at": "2026-05-08T22:59:16.563184"
-    },
-    "42082987": {
-      "title": "Universal newborn hearing screening outcomes based on national health policy in Chiangrai Prachanukroh Hospital, Thailand.",
-      "reported_at": "2026-05-08T22:59:16.563184"
-    },
-    "41692079": {
-      "title": "EU Joint Action: Integrating Palliative Care in the EU Cancer Agenda: Insights From JANE-2.",
-      "reported_at": "2026-05-08T22:59:16.563184"
-    },
-    "41520332": {
-      "title": "Return on Returns: Building Scientific Capacity in AIDS Endemic Countries.",
-      "reported_at": "2026-05-08T22:59:16.563184"
-    },
     "42082171": {
       "title": "A Stepped Care Approach to Promoting Engagement in a Digital Health Intervention: Secondary Analysis of a Randomized Controlled Trial.",
       "reported_at": "2026-05-09T22:51:42.461007"
@@ -1023,6 +1003,10 @@
     "41912943": {
       "title": "Language Preference Is Associated with Goals-of-Care Communication and End-of-Life Care in Dementia.",
       "reported_at": "2026-11-04T01:58:21.264283"
+    },
+    "42492421": {
+      "title": "Artificial intelligence enabled social robotic interventions (PARO) in Australian dementia care: A systematic review and meta-analysis.",
+      "reported_at": "2026-11-05T02:01:35.873851"
     }
   }
 }
