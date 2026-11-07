@@ -1,9 +1,5 @@
 {
   "reported_pmids": {
-    "42106828": {
-      "title": "The impact of war on Primary Health Care in Ukraine: a cross-sectional survey and qualitative interviews with service providers.",
-      "reported_at": "2026-05-10T22:52:24.752112"
-    },
     "42098763": {
       "title": "Implementing a primary care disease management concept for venous leg ulceration: findings of a mixed-methods process evaluation in the Ulcus Cruris Care trial.",
       "reported_at": "2026-05-12T23:06:39.825645"
@@ -995,6 +991,14 @@
     "42956775": {
       "title": "Charting a course to men's health and wellbeing: applying a lens of power and politics to improve men's health outcomes.",
       "reported_at": "2026-11-06T02:01:31.074579"
+    },
+    "42987174": {
+      "title": "Application of Digital Health Interventions for Cognitive Management in Children With Cancer: Scoping Review.",
+      "reported_at": "2026-11-07T01:42:24.515004"
+    },
+    "42476005": {
+      "title": "Digital health technologies versus traditional methods for cardiovascular risk assessment in asymptomatic adults: a systematic review and network meta-analysis of diagnostic accuracy and clinical outcomes.",
+      "reported_at": "2026-11-07T01:42:24.515004"
     }
   }
 }
