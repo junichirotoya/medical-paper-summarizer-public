@@ -1,21 +1,5 @@
 {
   "reported_pmids": {
-    "42129804": {
-      "title": "Regional cancer care leads´ and patient representatives´ perspectives on national governance and organisation of palliative cancer care.",
-      "reported_at": "2026-05-15T22:57:25.240395"
-    },
-    "42133603": {
-      "title": "EPOCA Tele-Monitoring System for Older Adults at High Risk of Hospitalization: Budget Impact and Cost-Effectiveness Analysis.",
-      "reported_at": "2026-05-15T22:57:25.240395"
-    },
-    "42114061": {
-      "title": "Effectiveness of Digital Health Interventions in Older Adults With Frailty and Sarcopenia: Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
-      "reported_at": "2026-05-16T22:50:49.148525"
-    },
-    "42140618": {
-      "title": "Digital Patient Decision Aid for Antiobesity Medications: Mixed Methods Study of Human-Centered Design and Usability Evaluation.",
-      "reported_at": "2026-05-16T22:50:49.148525"
-    },
     "42133568": {
       "title": "Maturity, Safety, and Equity of AI-Enabled Systems and Triage in Integrated Primary Care.",
       "reported_at": "2026-05-19T23:05:12.279194"
@@ -975,6 +959,14 @@
     "42982076": {
       "title": "Preparing for responsive management versus renal dialysis in older people living with kidney failure and frailty or multimorbidity in the UK (Prepare for Kidney Care): a two-arm, superiority, parallel-group, open-label, pragmatic, phase 3, individually randomised controlled trial.",
       "reported_at": "2026-11-11T01:44:35.112588"
+    },
+    "43013342": {
+      "title": "Digital Health Interventions for Pregnancy- and Childbirth-Related Posttraumatic Stress Disorder Symptoms in Postpartum Women: Systematic Review and Meta-Analysis.",
+      "reported_at": "2026-11-14T02:00:18.764806"
+    },
+    "43024366": {
+      "title": "Effectiveness of Digital Health Interventions on Rehabilitation Outcomes in Patients After Total Knee Arthroplasty: Systematic Review and Network Meta-Analysis.",
+      "reported_at": "2026-11-14T02:00:18.764806"
     }
   }
 }
