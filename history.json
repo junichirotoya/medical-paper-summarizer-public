@@ -1,9 +1,5 @@
 {
   "reported_pmids": {
-    "42166786": {
-      "title": "Efficacy of Internet-Based Self-Help Interventions for Irritable Bowel Syndrome: Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
-      "reported_at": "2026-05-23T22:55:46.049963"
-    },
     "42160753": {
       "title": "Virtual Consultations for People With Intellectual Disabilities in General Practice and Community Care: Mixed Methods Qualitative Study.",
       "reported_at": "2026-05-26T23:13:04.419562"
@@ -947,6 +943,14 @@
     "43026143": {
       "title": "Measuring Quality in Assisted Living: The Oregon Way.",
       "reported_at": "2026-11-19T02:57:53.621034"
+    },
+    "43045906": {
+      "title": "San Francisco's Shared Priority Pilot: An Interagency Initiative to Connect Shared Clients to Housing, Human Services, and Health Care.",
+      "reported_at": "2026-11-20T02:52:46.191018"
+    },
+    "43024791": {
+      "title": "Health Canada's Disclosure and Use of AI Raises Questions Around Effectiveness and Accountability.",
+      "reported_at": "2026-11-20T02:52:46.191018"
     }
   }
 }
