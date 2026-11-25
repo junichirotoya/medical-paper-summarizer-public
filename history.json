@@ -1,25 +1,5 @@
 {
   "reported_pmids": {
-    "42160753": {
-      "title": "Virtual Consultations for People With Intellectual Disabilities in General Practice and Community Care: Mixed Methods Qualitative Study.",
-      "reported_at": "2026-05-26T23:13:04.419562"
-    },
-    "42172569": {
-      "title": "Co-Develop-IT! Unifying Methodological Guideline for the Co-Design, Development, and Evaluation of Individually Tailored Technology-Enhanced Training and Rehabilitation Concepts: Consensus Development Study and Tutorial.",
-      "reported_at": "2026-05-26T23:13:04.419562"
-    },
-    "42172667": {
-      "title": "Associations Between Mukbang Watching and Appetite, Nutrition, and Quality of Life in Pediatric Patients with Cancer: Intensive Longitudinal Study.",
-      "reported_at": "2026-05-27T23:20:14.582358"
-    },
-    "42177478": {
-      "title": "Cultural influences on coping among Chinese children aged 7-14 undergoing chemotherapy: implications for pediatric oncology service delivery.",
-      "reported_at": "2026-05-27T23:20:14.582358"
-    },
-    "42192386": {
-      "title": "Dementia care in the United Arab Emirates: an environmental scan of services, policy, workforce, and caregiving contexts.",
-      "reported_at": "2026-05-28T23:20:21.160300"
-    },
     "42174605": {
       "title": "Rural physician deployment programs in five Southeast Asian countries: a policy and narrative review.",
       "reported_at": "2026-05-29T23:16:44.090271"
@@ -955,6 +935,10 @@
     "43049731": {
       "title": "Search Interest in Alleged COVID-19 Treatments During the Pandemic and the Impact of Mass News Media Coverage Based on Google Trends and Media Cloud Data: Retrospective Analysis.",
       "reported_at": "2026-11-22T01:56:49.678563"
+    },
+    "43057662": {
+      "title": "Dementia and Unwanted End-of-Life Treatment: A Retrospective Cohort Study Among Older Adults.",
+      "reported_at": "2026-11-25T04:47:54.602660"
     }
   }
 }
