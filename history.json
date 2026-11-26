@@ -1,13 +1,5 @@
 {
   "reported_pmids": {
-    "42174605": {
-      "title": "Rural physician deployment programs in five Southeast Asian countries: a policy and narrative review.",
-      "reported_at": "2026-05-29T23:16:44.090271"
-    },
-    "42213502": {
-      "title": "US Food and Drug Administration Shifts to AI-Enhanced Regulatory Review With Elsa 4.0 and HALO.",
-      "reported_at": "2026-05-29T23:16:44.090271"
-    },
     "42214075": {
       "title": "Effects of Multicomponent Digital Health Interventions on Multidimensional Physical Activity in Older Adults: Systematic Review, Meta-Analysis, and Meta-Regression of Randomized Controlled Trials.",
       "reported_at": "2026-05-30T23:00:08.032191"
@@ -939,6 +931,10 @@
     "43057662": {
       "title": "Dementia and Unwanted End-of-Life Treatment: A Retrospective Cohort Study Among Older Adults.",
       "reported_at": "2026-11-25T04:47:54.602660"
+    },
+    "43067358": {
+      "title": "Documenting Psychosocial Needs at the End of Life: Implementation of an Interdisciplinary Huddle to Foster Communication in Pediatric Care.",
+      "reported_at": "2026-11-26T03:59:16.958939"
     }
   }
 }
